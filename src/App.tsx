@@ -127,8 +127,8 @@ function Hero() {
       className="relative grid min-h-[100dvh] grid-cols-[minmax(0,1.16fr)_minmax(23rem,0.84fr)] max-[900px]:grid-cols-1 max-[900px]:pb-[5.5rem]"
       aria-labelledby="intro-title"
     >
-      <div className="flex min-w-0 items-end pt-[clamp(1rem,1.75vw,2rem)] pl-[clamp(1rem,1.75vw,2rem)] max-[900px]:min-h-[52dvh] max-[900px]:p-3 max-[520px]:min-h-[47dvh]">
-        <div className="figure-frame relative aspect-square max-h-[calc(100dvh-clamp(5.5rem,9vw,9rem))] w-full overflow-hidden bg-[#060706] max-[900px]:max-h-none">
+      <div className="flex min-w-0 items-start pl-[clamp(1rem,1.75vw,2rem)] max-[900px]:min-h-[52dvh] max-[900px]:p-3 max-[520px]:min-h-[47dvh]">
+        <div className="figure-frame relative aspect-square w-full overflow-hidden bg-[#060706]">
           <img
             src={perseusImage}
             alt="Halftone sculpture of Perseus"
@@ -137,9 +137,9 @@ function Hero() {
         </div>
       </div>
 
-      <div className="relative grid min-h-full place-items-center px-[clamp(2.5rem,5vw,7rem)] py-[clamp(8rem,14vw,14rem)] max-[900px]:min-h-[42dvh] max-[900px]:place-items-start max-[900px]:px-5 max-[900px]:pt-[4.5rem] max-[900px]:pb-28 max-[520px]:min-h-[48dvh] max-[520px]:pt-20">
+      <div className="relative grid min-h-full place-items-center px-[clamp(2.5rem,5vw,7rem)] pt-[clamp(4rem,8vw,8rem)] pb-[clamp(12rem,20vw,20rem)] max-[900px]:min-h-[42dvh] max-[900px]:place-items-start max-[900px]:px-5 max-[900px]:pt-[4.5rem] max-[900px]:pb-28 max-[520px]:min-h-[48dvh] max-[520px]:pt-20">
         <ProjectOrb
-          className="animate-orb-float top-[clamp(14rem,34vh,24rem)] right-[clamp(2rem,7vw,8rem)] max-[900px]:top-0 max-[900px]:right-5"
+          className="animate-orb-float top-[clamp(8rem,18vh,13rem)] right-[clamp(2rem,7vw,8rem)] max-[900px]:top-0 max-[900px]:right-5"
           href={links.civicCycle}
           label="Open Civic Cycle"
         >
