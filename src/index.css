@@ -45,6 +45,16 @@
   mix-blend-mode: soft-light;
 }
 
+.figure-frame::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(to right, transparent 72%, #080908 100%),
+    linear-gradient(to bottom, transparent 74%, #080908 100%);
+}
+
 .gradient-civic,
 .gradient-ariadne {
   background-position: 0% 50%;

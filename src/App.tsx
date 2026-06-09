@@ -7,6 +7,7 @@ const links = {
   ariadne: "https://github.com/ArkXero/Ariadne",
   github: "https://github.com/ArkXero",
   discord: "https://discord.com",
+  linkedin: "https://www.linkedin.com/in/ronit-singh-7b8011397",
 };
 
 function AriadneMark() {
@@ -80,10 +81,29 @@ function GithubIcon() {
 
 function DiscordIcon() {
   return (
-    <svg viewBox="0 0 256 199" aria-hidden="true" preserveAspectRatio="xMidYMid">
+    <svg
+      viewBox="0 0 256 199"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid"
+    >
       <path
         fill="currentColor"
         d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"
+      />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg
+      viewBox="0 0 256 256"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid"
+    >
+      <path
+        fill="currentColor"
+        d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
       />
     </svg>
   );
@@ -104,11 +124,11 @@ function ArrowIcon() {
 function Hero() {
   return (
     <section
-      className="relative grid min-h-[100dvh] grid-cols-[minmax(0,1.16fr)_minmax(23rem,0.84fr)] border-b border-[#1b1d1b] max-[900px]:grid-cols-1 max-[900px]:pb-[5.5rem]"
+      className="relative grid min-h-[100dvh] grid-cols-[minmax(0,1.16fr)_minmax(23rem,0.84fr)] max-[900px]:grid-cols-1 max-[900px]:pb-[5.5rem]"
       aria-labelledby="intro-title"
     >
       <div className="flex min-w-0 items-end pt-[clamp(1rem,1.75vw,2rem)] pl-[clamp(1rem,1.75vw,2rem)] max-[900px]:min-h-[52dvh] max-[900px]:p-3 max-[520px]:min-h-[47dvh]">
-        <div className="figure-frame relative aspect-square max-h-[calc(100dvh-clamp(5.5rem,9vw,9rem))] w-full overflow-hidden bg-[#060706] after:pointer-events-none after:absolute after:inset-0 after:bg-linear-to-r after:from-transparent after:from-80% after:to-[#080908] after:content-[''] max-[900px]:max-h-none">
+        <div className="figure-frame relative aspect-square max-h-[calc(100dvh-clamp(5.5rem,9vw,9rem))] w-full overflow-hidden bg-[#060706] max-[900px]:max-h-none">
           <img
             src={perseusImage}
             alt="Halftone sculpture of Perseus"
@@ -119,11 +139,15 @@ function Hero() {
 
       <div className="relative grid min-h-full place-items-center px-[clamp(2.5rem,5vw,7rem)] py-[clamp(8rem,14vw,14rem)] max-[900px]:min-h-[42dvh] max-[900px]:place-items-start max-[900px]:px-5 max-[900px]:pt-[4.5rem] max-[900px]:pb-28 max-[520px]:min-h-[48dvh] max-[520px]:pt-20">
         <ProjectOrb
-          className="animate-orb-float top-[clamp(2.5rem,5vw,5.25rem)] left-[clamp(2rem,4.5vw,5rem)] max-[900px]:top-0 max-[900px]:right-5 max-[900px]:left-auto"
+          className="animate-orb-float top-[clamp(14rem,34vh,24rem)] right-[clamp(2rem,7vw,8rem)] max-[900px]:top-0 max-[900px]:right-5"
           href={links.civicCycle}
           label="Open Civic Cycle"
         >
-          <img src={civicCycleIcon} alt="" className="h-[58%] w-[58%] object-contain" />
+          <img
+            src={civicCycleIcon}
+            alt=""
+            className="h-[58%] w-[58%] object-contain"
+          />
         </ProjectOrb>
 
         <div className="w-full max-w-[33rem] text-left max-[900px]:max-w-none">
@@ -145,7 +169,7 @@ function Hero() {
             </em>{" "}
             software
             <br />
-            for people, devs, and myself
+            for users, devs, and myself
           </p>
         </div>
 
@@ -179,6 +203,15 @@ function Hero() {
           aria-label="Discord"
         >
           <DiscordIcon />
+        </a>
+        <a
+          className="grid h-9 w-9 place-items-center rounded-full border border-transparent text-[#515451] transition-[color,transform,border-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-[#2c302c] hover:text-[#d4d6d0] focus-visible:-translate-y-1 focus-visible:border-[#2c302c] focus-visible:text-[#d4d6d0] active:-translate-y-px active:scale-[0.97] [&_svg]:h-[1.05rem] [&_svg]:w-[1.05rem]"
+          href={links.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
+          <LinkedInIcon />
         </a>
       </div>
 
@@ -257,10 +290,6 @@ function Work() {
           </span>
         </a>
       </div>
-
-      <p className="absolute right-[clamp(1rem,2.5vw,3rem)] bottom-[clamp(1rem,2.5vw,3rem)] m-0 text-[0.55rem] text-[#3f433f] max-[520px]:right-auto max-[520px]:left-5">
-        Built with intent, tested against reality.
-      </p>
     </section>
   );
 }
