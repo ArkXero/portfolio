@@ -76,16 +76,6 @@
   animation: gradient-travel 2.2s ease-in-out infinite;
 }
 
-.scroll-line::after {
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: #747974;
-  animation: scroll-line 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
-  transform-origin: left;
-}
-
 @keyframes figure-enter {
   from {
     opacity: 0;
@@ -125,18 +115,6 @@
   }
   50% {
     background-position: 100% 50%;
-  }
-}
-
-@keyframes scroll-line {
-  0% {
-    transform: scaleX(0);
-  }
-  45% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(1) translateX(110%);
   }
 }
 

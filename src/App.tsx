@@ -163,13 +163,7 @@ function Hero() {
             c/o ’28
           </p>
           <p className="animate-copy-enter mt-[clamp(2.1rem,3.3vw,3.7rem)] mb-0 text-[clamp(1.15rem,1.65vw,1.85rem)] leading-[1.42] tracking-[-0.055em] text-[#e5e6e1] [animation-delay:480ms] max-[900px]:max-w-[27rem]">
-            Building{" "}
-            <em className="font-['Didot','Bodoni_72','Bodoni_MT',serif] text-[1.18em] font-normal tracking-[-0.02em] text-[#f4f3ed]">
-              useful
-            </em>{" "}
-            software
-            <br />
-            for users, devs, and myself
+            Building cool stuff
           </p>
         </div>
 
@@ -214,15 +208,6 @@ function Hero() {
           <LinkedInIcon />
         </a>
       </div>
-
-      <a
-        className="absolute right-[clamp(1rem,1.8vw,2rem)] bottom-[clamp(1.5rem,2.8vw,3rem)] flex items-center gap-2 text-[0.55rem] tracking-[0.08em] text-[#454845] uppercase max-[900px]:hidden"
-        href="#work"
-        aria-label="Scroll to selected work"
-      >
-        <span>work</span>
-        <span className="scroll-line block h-px w-10 overflow-hidden bg-[#222522]" />
-      </a>
     </section>
   );
 }
